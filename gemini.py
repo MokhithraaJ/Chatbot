@@ -8,13 +8,13 @@ import numpy as np
 import google.generativeai as genai
 
 # Configure Gemini
-genai.configure(api_key="AIzaSyBBjSELLLXtwbyV7KqklTHsLNnY-04PPco")
+genai.configure(api_key="YOUR_GOOGLE_GENERATIVE_AI_API_KEY")
 llm = genai.GenerativeModel("models/gemini-2.5-flash-preview-05-20")
 
 # MongoDB setup
-mongo_uri = "mongodb+srv://mokhithraa2004:wfwsxhTK9x8TuKUW@cluster0.p5j2bi5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+mongo_uri = "YOUR_MONGODB_CONNECTION_STRING"
 client = MongoClient(mongo_uri)
-collection = client["knowledge_base"]["Building_Rules"]
+collection = client["knowledge_base"]["Building_Rules"] #you may change the collection name 
 
 # FastAPI setup
 app = FastAPI()
