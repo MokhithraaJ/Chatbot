@@ -1,7 +1,3 @@
-Absolutely! Here is the entire README content in one single block for easy copy-pasting:
-
----
-
 # Gemini MongoDB Chatbot
 
 An AI-powered chatbot built with **FastAPI**, **Google Gemini Generative AI**, and **MongoDB**.
@@ -154,18 +150,6 @@ Type your questions into the chat interface and get AI-generated answers based o
 * Verify your MongoDB cluster is accessible and the `Building_Rules` collection is populated.
 * If indexing hangs or fails, check your internet connection (embedding calls require network).
 * For any other errors, check console logs for stack traces.
-
----
-
-## 📋 Requirements
-
-See `requirements.txt` for the full list of Python dependencies.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
 
 ---
 
