@@ -1,31 +1,31 @@
-# Chatbot
-Sure! Here's a complete, single `README.md` file including introduction, setup, running instructions, and all the details you asked for:
+Absolutely! Here is the entire README content in one single block for easy copy-pasting:
 
-````markdown
+---
+
 # Gemini MongoDB Chatbot
 
 An AI-powered chatbot built with **FastAPI**, **Google Gemini Generative AI**, and **MongoDB**.
 
-This chatbot retrieves knowledge base documents from MongoDB, embeds them using Gemini Embeddings, and uses FAISS for fast similarity search. When you ask a question, it finds the most relevant chunks and uses Gemini's language model to generate a precise answer.
+This chatbot retrieves knowledge base documents from MongoDB, embeds them using Gemini Embeddings, and uses FAISS for fast similarity search. When you ask a question, it finds the most relevant chunks and uses Gemini's language model to articulate a precise answer.
 
 ---
 
 ## 🔥 Features
 
-- Uses Google Gemini Embeddings for semantic search  
-- Stores and retrieves documents from MongoDB Atlas  
-- Fast vector similarity search using FAISS  
-- Easy-to-use web chat UI with FastAPI  
-- CORS enabled for frontend flexibility  
+* Uses Google Gemini Embeddings for semantic search
+* Stores and retrieves documents from MongoDB Atlas
+* Fast vector similarity search using FAISS
+* Easy-to-use web chat UI with FastAPI
+* CORS enabled for frontend flexibility
 
 ---
 
 ## 💻 Prerequisites
 
-- Python 3.8+  
-- MongoDB Atlas account with a populated collection  
-- Google Generative AI API key (Gemini)  
-- VS Code or any code editor  
+* Python 3.8+
+* MongoDB Atlas account with a populated collection
+* Google Generative AI API key (Gemini)
+* VS Code or any code editor
 
 ---
 
@@ -36,7 +36,7 @@ This chatbot retrieves knowledge base documents from MongoDB, embeds them using 
 ```bash
 git clone https://github.com/your-username/gemini-mongo-chatbot.git
 cd gemini-mongo-chatbot
-````
+```
 
 ### 2. Open in VS Code
 
@@ -68,7 +68,7 @@ Open `main.py` and update:
 # Replace with your actual Google Generative AI API key
 genai.configure(api_key="YOUR_GOOGLE_GENERATIVE_AI_API_KEY")
 
-# Replace with your actual MongoDB Atlas connection URI
+# Replace with your actual MongoDB Atlas connection URI and the respective Collections
 mongo_uri = "YOUR_MONGODB_CONNECTION_STRING"
 ```
 
@@ -78,8 +78,8 @@ mongo_uri = "YOUR_MONGODB_CONNECTION_STRING"
 
 Make sure your MongoDB Atlas database contains:
 
-* Database: `knowledge_base`
-* Collection: `Building_Rules`
+* Database: `knowledge_base` (or a name of your wish)
+* Collection: `Building_Rules` (or a name of your wish)
 * Documents structured as:
 
 ```json
@@ -89,11 +89,13 @@ Make sure your MongoDB Atlas database contains:
 }
 ```
 
-Chunks should be numbered sequentially for proper context ordering.
+
 
 ---
 
 ### 7. Run the FastAPI server
+
+Name the python file as .main.py' and run the below code in terminal.
 
 ```bash
 uvicorn main:app --reload
@@ -169,13 +171,5 @@ This project is licensed under the MIT License.
 
 ## 🙋‍♂️ Author
 
-[Your Name](https://github.com/your-username)
 
----
-
-```
-
----
-
-If you want, I can also provide the `requirements.txt` and `.gitignore` files to go with this!
-```
+[Mokhithraa. J](https://github.com/MokhithraaJ)
