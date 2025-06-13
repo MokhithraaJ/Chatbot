@@ -54,15 +54,15 @@ def upload_chunks_to_mongodb(chunk_dir, mongo_uri, db_name, collection_name):
 
 if __name__ == "__main__":
     # === Change these values as needed ===
-    pdf_file = "water_supply.pdf"  # Path to your PDF
+    pdf_file = "your_document.pdf"  # Mention the path to your PDF
     chunk_directory = "chunks"
     chunk_size = 1000
     overlap = 100
 
     # MongoDB details
-    mongo_uri = "mongodb+srv://mokhithraa2004:wfwsxhTK9x8TuKUW@cluster0.p5j2bi5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-    database_name = "knowledge_base"
-    collection_name = "water_supply"
+    mongo_uri = "YOUR_MONGODB_URI"
+    database_name = "knowledge_base"  #You may change the database name as desired
+    collection_name = "water_supply" #You may change the collection name as required 
 
     # Step 1: Load and save chunks
     chunks = load_pdf_chunks(pdf_file, chunk_size, overlap, chunk_directory)
