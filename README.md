@@ -2,7 +2,7 @@
 
 An AI-powered chatbot built with **FastAPI**, **Google Gemini Generative AI**, and **MongoDB**.
 
-This chatbot retrieves knowledge base documents from MongoDB, embeds them using Gemini Embeddings, and uses FAISS for fast similarity search. When you ask a question, it finds the most relevant chunks and uses Gemini's language model to articulate a precise answer.
+This chatbot retrieves knowledge base documents from MongoDB, embeds them using Gemini Embeddings, and uses FAISS for fast similarity search. When you ask a question, it finds the most relevant chunks and uses Gemini's language model to articulate a precise answer. I also maintains history of the previous 3 questions to handle contextual follow-ups.
 
 ---
 
@@ -13,7 +13,7 @@ This chatbot retrieves knowledge base documents from MongoDB, embeds them using 
 * Fast vector similarity search using FAISS
 * Easy-to-use web chat UI with FastAPI
 * CORS enabled for frontend flexibility
-
+* Maintains history of the previous 3 questions to handle contextual follow-ups
 ---
 
 ## 💻 Prerequisites
