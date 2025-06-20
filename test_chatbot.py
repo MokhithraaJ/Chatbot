@@ -6,7 +6,7 @@ import faiss
 import json
 
 import main  # Import main so we can access global variables
-from main import app
+from gemini import app
 
 client = TestClient(app)
 
